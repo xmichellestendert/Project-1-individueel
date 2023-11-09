@@ -1,0 +1,282 @@
+body {
+    width: 375px;
+    margin: 0;
+    /* Hiermee wordt de container in het midden van het scherm geplaatst */
+    overflow-x: hidden;
+    /* Zorgt ervoor dat eventuele inhoud die buiten de container valt, wordt verborgen */
+}
+
+h1 {
+    color: #FED500;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 140px;
+    color: #FED500;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #FED500;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+
+/* Stijl de header */
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    width: 375px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1em;
+}
+
+header nav img {
+    height: 60px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    font-family: sans-serif;
+    color: #000;
+}
+
+
+
+
+
+footer {
+    background-color: #FED500;
+    text-align: end;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 122px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* Section voor Welkom bij EcoGrow */
+
+section:first-of-type {
+    position: relative;
+}
+
+section:first-of-type>section:nth-child(1) {
+    position: absolute;
+}
+
+section:first-of-type .kastekst {
+    position: absolute;
+    padding: 1em;
+}
+
+section:first-of-type .kastekst h1 {
+    margin: 0em;
+    padding: 0em;
+}
+
+section:first-of-type .kastekst p {
+    color: #fff;
+}
+
+
+/* Section voor tekst bij bollenpatroon */
+
+.tekstmetpatroon {
+    position: relative;
+    top: 40vh;
+    z-index: 100;
+}
+
+.tekstmetpatroon section:first-of-type {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+.tekstmetpatroon section:first-of-type div {
+    margin-left: 3em;
+}
+
+.tekstmetpatroon section:first-of-type img {
+    width: 20%;
+    background-color: #FED500;
+    padding: 1.5em 1.5em 7em 0.5em;
+}
+
+.tekstmetpatroon section:first-of-type h2 {
+    color: #000;
+    margin: 0em;
+    font-size: 1.5em;
+}
+
+.tekstmetpatroon section:nth-of-type(2) {
+    height: 15em;
+    background-image: url(media/afbeeldingZonnebloem.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tekstmetpatroon section:nth-of-type(2) h2 {
+    color: #fff;
+    margin: 0em;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.tekstmetpatroon .knop a {
+    background-color: #FF6B00;
+    padding: 0.5em 1em;
+    font-family: sans-serif;
+    color: #fff;
+    margin-top: 1em;
+    align-items: center;
+}
+
+
+
+
+.kweken section:first-of-type .kastekst h1 {
+    color: #fff;
+    margin-top: 1em;
+}
+
+.kweken .tekstmetpatroon section:first-of-type div:last-of-type {
+    background-color: #FF6B00;
+    width: 100%;
+    margin-top: -50%;
+    margin-bottom: 50%;
+}
+
+.kweken .tekstmetpatroon section div {
+    margin-bottom: 3em;
+}
+
+.kweken .tekstmetpatroon section div h3 {
+    color: #000;
+    margin: 2em 0em 0em 0em;
+}
+
+.kweken .tekstmetpatroon section div ul li {
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+.moestuin section:first-of-type .kastekst h1 {
+    color: #fff;
+    margin-top: 1em;
+}
+
+.moestuin .tekstmetpatroon section {
+    width: 375px;
+    display: block;
+}
+
+.moestuin .tekstmetpatroon section section {
+    width: 375px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.moestuin .tekstmetpatroon section section img {
+    width: auto;
+    height: 10em;
+    padding: 0em;
+    margin: 0em 1em 0em 1em;
+    background: none;
+}
+
+
+.moestuin .tekstmetpatroon section section section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding: 1em 0em;
+}
+
+.moestuin .tekstmetpatroon section section section h3 {
+    margin: 0em;
+    color: #000;
+}
+
+.moestuin .tekstmetpatroon section section section section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: max-content;
+    margin: 0em;
+}
+
+
+.moestuin .tekstmetpatroon section section section section img {
+    width: 30%;
+    height: auto;
+    padding: 0em;
+    margin: 0em;
+}
+
+
+.moestuin .tekstmetpatroon section {
+    background: none;
+}
+
+
+
+
+
+
+.detailpagina img {
+    width: auto;
+    height: 17em;
+}
+
+
+ol li {
+    font-family: sans-serif;
+    color: #000;
+}
